@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital Appointment Booking</title>
+  <!-- Hospital Appointment Form - HTML5 Standards -->
+</head>
+<body>
+
+  <h2>Hospital Appointment Booking Form</h2>
+
+  <form action="response.html" method="get" autocomplete="on">
+    
+    <fieldset>
+      <legend>Patient Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required autofocus><br><br>
+
+      <label for="password">Create Password:</label>
+      <input type="password" id="password" name="password" placeholder="Set a password" required><br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit phone number" required><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="0" max="120" required><br><br>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Medical Details</legend>
+
+      <label>Symptoms:</label><br>
+      <input type="checkbox" id="fever" name="symptoms" value="Fever">
+      <label for="fever">Fever</label><br>
+      <input type="checkbox" id="cough" name="symptoms" value="Cough">
+      <label for="cough">Cough</label><br>
+      <input type="checkbox" id="pain" name="symptoms" value="Pain">
+      <label for="pain">Body Pain</label><br>
+      <input type="checkbox" id="headache" name="symptoms" value="Headache">
+      <label for="headache">Headache</label><br><br>
+
+      <label for="url">Your Website (if any):</label>
+      <input type="url" id="url" name="url" placeholder="https://yourwebsite.com"><br><br>
+
+      <label for="search">Search Hospital Services:</label>
+      <input type="search" id="search" name="search" placeholder="e.g., ENT, Cardiology"><br><br>
+
+      <label for="department">Select Department:</label>
+      <select id="department" name="department" required>
+        <option value="">--Select--</option>
+        <option value="general">General Medicine</option>
+        <option value="cardiology">Cardiology</option>
+        <option value="pediatrics">Pediatrics</option>
+        <option value="orthopedics">Orthopedics</option>
+        <option value="dermatology">Dermatology</option>
+      </select><br><br>
+
+      <label for="file">Upload Previous Report:</label>
+      <input type="file" id="file" name="file" accept=".pdf, .jpg, .png"><br><br>
+
+      <label for="comments">Additional Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Describe your condition or queries..."></textarea><br><br>
+
+      <label for="progress">Form Completion Progress:</label><br>
+      <progress id="progress" value="80" max="100"></progress><br><br>
+
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
+
+
